@@ -1,0 +1,14 @@
+{
+  "name": "file-receiving-quarantine-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地文件接收与隔离工作台：服务端内容检查、随机存储名、ZIP 安全校验、隔离区与审计留痕",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix web install",
+    "samples": "npm --prefix server run samples",
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix server start"
+  }
+}

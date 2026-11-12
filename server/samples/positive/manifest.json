@@ -1,0 +1,34 @@
+{
+  "positive": [
+    {
+      "file": "sample-blue.jpg",
+      "sizeBytes": 795,
+      "kind": "image",
+      "description": "由 PNG 经 sips 转换的 JPEG"
+    },
+    {
+      "file": "sample-blue.png",
+      "sizeBytes": 99,
+      "kind": "image",
+      "description": "自制 32x32 蓝色 PNG"
+    },
+    {
+      "file": "sample-green.png",
+      "sizeBytes": 106,
+      "kind": "image",
+      "description": "自制 48x24 绿色 PNG"
+    },
+    {
+      "file": "sample-images.zip",
+      "sizeBytes": 441,
+      "kind": "zip",
+      "description": "含两张自制图片的合法 ZIP"
+    },
+    {
+      "file": "sample-red.gif",
+      "sizeBytes": 34,
+      "kind": "image",
+      "description": "自制 1x1 红色 GIF"
+    }
+  ]
+}

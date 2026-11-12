@@ -1,0 +1,16 @@
+{
+  "name": "file-quarantine-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --no-warnings src/index.js",
+    "start": "node --no-warnings src/index.js",
+    "samples": "node scripts/generate-samples.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "yauzl": "^3.2.0"
+  }
+}
