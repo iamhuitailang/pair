@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>资料五：限速与重试策略 · 本地资料站</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <h1>资料五：限速与重试策略</h1>
+    <nav>
+      <a href="/index.html">首页</a>
+      <a href="/news/index.html">资料列表</a>
+      <a href="/about.html">关于本站</a>
+    </nav>
+  </header>
+  <main class="content">
+    <p>同一规则下的请求严格串行，两次请求之间至少间隔 delay_seconds 秒。</p>
+    <p>遇到 5xx、429 或网络错误时按指数退避重试，默认最多重试 2 次。</p>
+    <p>4xx 错误（如 404）不重试，直接记录为 error。</p>
+  </main>
+  <p class="updated">更新时间：2026-10-29 11:05</p>
+  <footer>Local Demo Site · 仅供本机演示</footer>
+</body>
+</html>

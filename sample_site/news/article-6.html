@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>资料六：内容哈希与去重 · 本地资料站</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <h1>资料六：内容哈希与去重</h1>
+    <nav>
+      <a href="/index.html">首页</a>
+      <a href="/news/index.html">资料列表</a>
+      <a href="/about.html">关于本站</a>
+    </nav>
+  </header>
+  <main class="content">
+    <p>正文文本经过去空白处理后计算 SHA-256，作为内容指纹。</p>
+    <p>同一轮内相同规范化 URL 只会入队一次，天然去重。</p>
+    <p>不同页面若正文完全相同，仍会各自记录，互不影响。</p>
+  </main>
+  <p class="updated">更新时间：2026-10-30 15:20</p>
+  <footer>Local Demo Site · 仅供本机演示</footer>
+</body>
+</html>

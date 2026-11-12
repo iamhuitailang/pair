@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; background: #f6f8fa; color: #24292f; }
+
+.layout { max-width: 1200px; margin: 0 auto; padding: 0 16px 48px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid #d0d7de; margin-bottom: 20px; }
+.topbar h1 { font-size: 18px; margin: 0; }
+.topbar nav button { margin-left: 8px; }
+
+button, .btn { padding: 5px 12px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; cursor: pointer; font-size: 13px; color: #24292f; text-decoration: none; display: inline-block; }
+button:hover, .btn:hover { background: #f3f4f6; }
+button.primary { background: #1f883d; border-color: #1f883d; color: #fff; }
+button.primary:hover { background: #1a7f37; }
+button.danger { color: #cf222e; }
+button.active { background: #0969da; border-color: #0969da; color: #fff; }
+button + button, .btn + button, button + .btn { margin-left: 6px; }
+
+.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.section-head h2 { font-size: 16px; margin: 0; }
+
+.table { width: 100%; border-collapse: collapse; background: #fff; font-size: 13px; }
+.table th, .table td { border: 1px solid #d0d7de; padding: 6px 10px; text-align: left; }
+.table th { background: #f6f8fa; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.break { word-break: break-all; }
+.empty { color: #57606a; padding: 24px 0; text-align: center; }
+
+.badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; background: #eaeef2; }
+.badge.run-running, .badge.run-pending { background: #fff8c5; color: #7d4e00; }
+.badge.run-finished { background: #dafbe1; color: #116329; }
+.badge.run-failed { background: #ffebe9; color: #a40e26; }
+.badge.st-new, .st-new b { background: #dafbe1; color: #116329; }
+.badge.st-modified, .st-modified b { background: #fff8c5; color: #7d4e00; }
+.badge.st-unchanged { background: #eaeef2; color: #57606a; }
+.badge.st-disappeared, .st-disappeared b { background: #ffebe9; color: #a40e26; }
+.badge.st-error, .st-error b { background: #ffebe9; color: #a40e26; }
+td.st-new, td.st-modified, td.st-disappeared, td.st-error { font-weight: 600; }
+
+.stat-cards { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.card { background: #fff; border: 1px solid #d0d7de; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 80px; }
+.card b { display: block; font-size: 20px; }
+.card span { font-size: 12px; color: #57606a; }
+.card.st-new { border-color: #4ac26b; }
+.card.st-modified { border-color: #d4a72c; }
+.card.st-disappeared, .card.st-error { border-color: #fa4549; }
+
+.meta { font-size: 13px; color: #57606a; }
+.filter-bar { margin: 10px 0; }
+.filter-bar button { margin-right: 6px; }
+
+.modal-mask { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; z-index: 10; }
+.modal { background: #fff; border-radius: 10px; padding: 20px 24px; width: 640px; max-height: 85vh; overflow: auto; }
+.modal h3 { margin-top: 0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+.form-grid label { display: flex; flex-direction: column; font-size: 12px; color: #57606a; gap: 4px; }
+.form-grid input, .form-grid select { padding: 6px 8px; border: 1px solid #d0d7de; border-radius: 6px; font-size: 13px; }
+.form-grid .checkbox { flex-direction: row; align-items: center; gap: 6px; }
+.modal-actions { margin-top: 16px; text-align: right; }
+.error { color: #cf222e; font-size: 13px; }
+
+.diff-row td { background: #f6f8fa; padding: 0; }
+pre.diff { margin: 0; padding: 10px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; overflow-x: auto; }
+.diff-add { background: #dafbe1; color: #116329; }
+.diff-del { background: #ffebe9; color: #a40e26; }
+.diff-hunk { color: #0969da; }
+.diff-none { color: #57606a; }
+
+select { padding: 5px 8px; border: 1px solid #d0d7de; border-radius: 6px; font-size: 13px; margin-right: 6px; }

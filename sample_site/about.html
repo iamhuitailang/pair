@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>关于本站 · 本地资料站</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <h1>关于本站</h1>
+    <nav>
+      <a href="/index.html">首页</a>
+      <a href="/news/index.html">资料列表</a>
+      <a href="/about.html">关于本站</a>
+    </nav>
+  </header>
+  <main class="content">
+    <p>本站由一组静态 HTML 文件组成，通过 <code>python3 -m http.server 8080</code> 在本机提供服务。</p>
+    <p>运行 <code>change_site.py apply</code> 可以模拟站点内容发生变化（修改、新增、下线文章），
+       运行 <code>change_site.py restore</code> 可恢复原状。</p>
+  </main>
+  <p class="updated">更新时间：2026-11-01 09:00</p>
+  <footer>Local Demo Site · 仅供本机演示</footer>
+</body>
+</html>

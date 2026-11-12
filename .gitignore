@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+frontend/dist/
+
+# 数据与备份
+backend/data/
+.sample_site_original/
+
+# 系统
+.DS_Store

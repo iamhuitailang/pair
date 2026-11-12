@@ -1,0 +1,10 @@
+body { font-family: -apple-system, "PingFang SC", sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #24292f; line-height: 1.7; }
+header.site { border-bottom: 2px solid #2da44e; margin-bottom: 1.5rem; }
+header.site h1 { margin: 0 0 .3rem; font-size: 1.4rem; }
+nav a { margin-right: 1rem; color: #0969da; text-decoration: none; }
+.updated { color: #57606a; font-size: .85rem; }
+article.item { border-bottom: 1px dashed #d0d7de; padding: .6rem 0; }
+article.item h2 { margin: 0; font-size: 1.1rem; }
+.pager { margin: 1.2rem 0; }
+.pager a { color: #0969da; }
+footer { margin-top: 2rem; color: #57606a; font-size: .8rem; }
